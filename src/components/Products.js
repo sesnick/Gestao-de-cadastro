@@ -19,12 +19,12 @@ class Products extends Component {
     localStorage.setItem(`prodInventory`,prodInventory ); 
     localStorage.setItem(`prodImg`,prodImg ); 
     
-    this.name.value = " ";
-    this.category.value =" ";
-    this.description.value =" ";
-    this.price.value =" ";
-    this.inventory.value =" ";
-    this.img.value =" ";
+    this.name.value = "";
+    this.category.value ="";
+    this.description.value ="";
+    this.price.value ="";
+    this.inventory.value ="";
+    this.img.value ="";
        
 
   }
