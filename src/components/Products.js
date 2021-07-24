@@ -54,9 +54,7 @@ class Products extends Component {
        <label for="inventory">Quantity:<br/> 
           <input type="text" placeholder="Inventory" ref={ (input) => this.inventory = input } />
        </label> 
-            <div>
-                <button type="submit">Submit</button>
-            </div>
+          <button type="submit">Submit</button>            
         </form>
       </div>
     );

@@ -10,16 +10,19 @@ class Clients extends Component {
     let clientEmail = this.email.value;
     let clientNumber = this.number.value;
     let clientDoc = this.doc.value;
+    let clientAddr = this.addr.value;
 
     localStorage.setItem(`clientName`,clientName ); 
     localStorage.setItem(`clientEmail`,clientEmail ); 
     localStorage.setItem(`clientNumber`,clientNumber ); 
     localStorage.setItem(`clientDoc`,clientDoc ); 
+    localStorage.setItem(`clienteAddr`, clientAddr);
 
     this.name.value="";
     this.email.value="";
     this.number.value ="";
     this.doc.value ="";
+    this.this.addr ="";
   }
   
   render() {
@@ -40,7 +43,10 @@ class Clients extends Component {
         </label><br/>
         <label for="doc">Document:<br/>
           <input type="text" id="doc" placeholder="Document" ref={ (input) => this.doc = input } />
-          </label>
+        </label><br/>
+        <label for="addr">Address:<br/>
+          <input type="text" id="addr" placeholder="Address" ref={ (input) => this.addr = input } />
+        </label>
           <button type="submit">Submit</button>
         </form>
       </div>
