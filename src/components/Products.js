@@ -35,14 +35,27 @@ class Products extends Component {
         <h2>Product database</h2>
 
         <form onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="Name" ref={ (input) => this.name = input } />
-          <input type="text" placeholder="Category" ref={ (input) => this.category = input } />
-          <input type="text" placeholder="Description" ref={ (input) => this.description = input } />
-          <input type="text" placeholder="Price" ref={ (input) => this.price = input } />
-          <input type="text" placeholder="Image URL" ref={ (input) => this.img = input } />
+        
+        <label for="name">Name:<br/>
+          <input type="text" id="name" placeholder="Name" ref={ (input) => this.name = input } />
+        </label><br/>
+        <label for="category">Category:<br/>
+          <input type="text" id="category" placeholder="Category" ref={ (input) => this.category = input } />
+        </label><br/>
+        <label for="descrip">Description:<br/>
+          <input type="text" id="descrip" placeholder="Description" ref={ (input) => this.description = input } />
+        </label><br/>
+        <label for="price">Price:<br/>
+          <input type="text" id="price" placeholder="Price" ref={ (input) => this.price = input } />
+       </label><br/> 
+       <label for="img">Image URL:<br/>
+          <input type="text" id="img" placeholder="Image URL" ref={ (input) => this.img = input } />
+       </label><br/> 
+       <label for="inventory">Quantity:<br/> 
           <input type="text" placeholder="Inventory" ref={ (input) => this.inventory = input } />
+       </label> 
             <div>
-                <button type="submit">Submit!</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
       </div>

@@ -13,7 +13,7 @@
 }
 body {
   color: #576366;
-  background: #5fcf80;
+  background: #346751;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -33,7 +33,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #3b80d1;
+  color: #C84B31 ;
 }
 hr {
   border: 0;
@@ -57,7 +57,7 @@ button {
 }
 button {
   color: white;
-  background: #4188dc;
+  background: #C84B31 ;
   padding-left: 1em;
   padding-right: 1em;
   cursor: pointer;
@@ -116,7 +116,7 @@ header {
 .main-nav a:hover,
 .main-nav .active {
   color: #fff;
-  background: #3b80d1;
+  background: #C84B31 ;
 }
 
 /* ICONS -------- */
@@ -173,7 +173,7 @@ header {
     padding-top: 3em;
   }
   .home a {
-    border-color: #3b80d1;
+    border-color: #C84B31;
   }
   .media img,
   .media > div,

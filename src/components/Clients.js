@@ -28,11 +28,20 @@ class Clients extends Component {
         <h2>Client database</h2>
 
         <form onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="Name" ref={ (input) => this.name = input } />
-          <input type="text" placeholder="Email" ref={ (input) => this.email = input } />
-          <input type="text" placeholder="Phone number" ref={ (input) => this.number = input } />
-          <input type="text" placeholder="Document" ref={ (input) => this.doc = input } />
-          <button type="submit">Submit!</button>
+
+        <label for="name">Name:<br/>
+          <input type="text" id="name" placeholder="Name" ref={ (input) => this.name = input } />
+        </label><br/>
+        <label for="Email">Email : <br/>
+          <input type="text" id="Email" placeholder="Email" ref={ (input) => this.email = input } />
+        </label><br/>
+        <label for="phone">Phone:<br/>
+          <input type="text" id="phone" placeholder="Phone number" ref={ (input) => this.number = input } />
+        </label><br/>
+        <label for="doc">Document:<br/>
+          <input type="text" id="doc" placeholder="Document" ref={ (input) => this.doc = input } />
+          </label>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
